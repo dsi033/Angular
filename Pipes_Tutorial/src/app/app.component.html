@@ -1,0 +1,14 @@
+<h1>{{title | uppercase}}</h1>
+
+<div>
+  <p>Today is {{taday | date}}</p>
+  <p>Today is {{taday | date:'fullDate'}}</p>
+  <p>Today is {{taday | date : 'hh:mm:ss dd/MM/YYYY'}}</p>
+</div>
+
+<p>{{currency | currency}}</p>
+<p>{{currency | currency: 'EUR' : "symbol" : "2.1-3"}}</p>
+<p>{{currency | percent}}</p>
+<p>{{currency | percent: '3.1-2'}}</p>
+
+<h1>{{title | append: "Custom"}}</h1>
